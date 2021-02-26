@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import logo from  './Img/logo192.png';
+import Styles from './Styles';
+import Layout from './Layout';
+import Menu from './Menu'
 
 function App() {
   return (
+    <>
+     <Layout>
+     <Menu />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           Portfólio
-        </p>
-        <a
-          className="App-link"
-          href="https://brnsoftware.herokuapp.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click aqui
-        </a>
-      </header>
+      <div className="App-header">
+        <div className="textCenter">
+          <h1>Frontend </h1>
+          <h1 className="colorDev"> Developer </h1>
+          <img src={logo} className="App-logo" alt="logo" />
+          
+        
+        </div>
+        
+      </div>
     </div>
+   
+    </Layout>
+    <Styles/>
+    </>
   );
 }
 
